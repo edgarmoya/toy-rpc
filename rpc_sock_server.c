@@ -35,9 +35,6 @@ static context_t *load_procedure(const char *name, size_t len)
 {
     char filename[1024];
 
-    // name = "jsmith"
-    // filename = "./dynamic/jsmith.so"
-
     snprintf(filename, 14 + len, "./dynamic/%s.so", name);
 
     fprintf(stdout, "Looking for [%s] (%s)\n", filename, name);
