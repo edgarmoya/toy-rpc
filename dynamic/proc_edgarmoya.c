@@ -7,8 +7,8 @@ typedef struct
 {
     reportable_t parent;
 
-    char cardNumber[20];
-    int isValid;
+    char cardNumber[20];     // Número de tarjeta de crédito
+    int isValid;             // Indica si el número de tarjeta de crédito es válido o no
 } my_struct_t;
 
 void *parse_parameters(void *data)
